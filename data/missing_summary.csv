@@ -1,0 +1,4 @@
+column,missing_count,missing_pct
+tweet_text,1,0.01
+emotion_in_tweet_is_directed_at,5802,63.81
+is_there_an_emotion_directed_at_a_brand_or_product,0,0.0

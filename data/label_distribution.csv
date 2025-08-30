@@ -1,0 +1,5 @@
+label,count_raw,percent_raw,count_clean,percent_clean
+No emotion toward brand or product,5389,59.27,5373,59.27
+Positive emotion,2978,32.75,2968,32.74
+Negative emotion,570,6.27,569,6.28
+I can't tell,156,1.72,156,1.72

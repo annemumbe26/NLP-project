@@ -1,0 +1,12 @@
+metric,value
+timestamp_utc,2025-08-30T14:36:04.031587Z
+raw_path,data/judge-1377884607_tweet_product_company.csv
+clean_path,data/judge-1377884607_tweet_product_company_cleaned.csv
+rows_before,9093
+rows_after,9066
+duplicate_rows_all_raw,22
+duplicate_rows_all_raw_pct,0.24
+duplicate_by_text_raw,27
+duplicate_by_text_raw_pct,0.3
+duplicates_removed_by_text,27
+dropped_rows_missing_labels,0

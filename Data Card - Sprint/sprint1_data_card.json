@@ -1,0 +1,90 @@
+{
+  "dataset_name": "judge-1377884607_tweet_product_company.csv",
+  "generated_at": "2025-08-30T14:26:52.808009Z",
+  "structure": {
+    "rows_raw": 9093,
+    "cols_raw": 3,
+    "rows_clean": 9066,
+    "cols_clean": 5,
+    "duplicates_raw_text": 27,
+    "duplicates_clean_text": 0,
+    "missing_raw": {
+      "tweet_text": 1,
+      "emotion_in_tweet_is_directed_at": 5802,
+      "is_there_an_emotion_directed_at_a_brand_or_product": 0
+    },
+    "missing_clean": {
+      "tweet_text": 1,
+      "emotion_in_tweet_is_directed_at": 5786,
+      "is_there_an_emotion_directed_at_a_brand_or_product": 0,
+      "target_norm": 5786,
+      "text_clean": 1
+    }
+  },
+  "labels": {
+    "distribution_raw": {
+      "No emotion toward brand or product": 5389,
+      "Positive emotion": 2978,
+      "Negative emotion": 570,
+      "I can't tell": 156
+    },
+    "distribution_clean": {
+      "No emotion toward brand or product": 5373,
+      "Positive emotion": 2968,
+      "Negative emotion": 569,
+      "I can't tell": 156
+    }
+  },
+  "targets": {
+    "top10_raw": {
+      "NaN": 5802,
+      "iPad": 946,
+      "Apple": 661,
+      "iPad or iPhone App": 470,
+      "Google": 430,
+      "iPhone": 297,
+      "Other Google product or service": 293,
+      "Android App": 81,
+      "Android": 78,
+      "Other Apple product or service": 35
+    },
+    "top10_clean": {
+      "NaN": 5786,
+      "iPad": 943,
+      "Apple": 659,
+      "iPad or iPhone App": 469,
+      "Google": 428,
+      "iPhone": 296,
+      "Other Google product or service": 293,
+      "Android App": 80,
+      "Android": 77,
+      "Other Apple product or service": 35
+    }
+  },
+  "content_diagnostics_raw": {
+    "chars_mean": 104.95106125591114,
+    "chars_median": 109.0,
+    "chars_p95": 142.0,
+    "words_mean": 17.76355438249203,
+    "words_median": 18.0,
+    "words_p95": 25.399999999999636
+  },
+  "cleaning_actions": [
+    "Dropped duplicate tweets",
+    "Dropped rows with missing labels",
+    "Normalized brand/product targets into target_norm",
+    "Created cleaned text column text_clean"
+  ],
+  "assumptions": [
+    "Labels are mostly accurate but may contain sarcasm/noise",
+    "Target normalization mapping covers common ambiguous categories"
+  ],
+  "risks": [
+    "Label imbalance may bias model training",
+    "Dataset biased toward event-specific tweets (SXSW)"
+  ],
+  "next_sprint_gate": {
+    "baseline_model_target": "\u226570% accuracy or Macro-F1",
+    "brand_coverage_target": "\u226590% normalized targets"
+  }
+}
