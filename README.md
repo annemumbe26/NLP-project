@@ -1,5 +1,5 @@
 # NLP Tweet Sentiment Analysis
-![alt text](image.png)
+visuals/image.png
 ## Project Overview
 
 This project focuses on building and evaluating machine learning models
@@ -87,20 +87,19 @@ heavily influenced the model's sentiment predictions.
 ## Visuals
 
 ### Model Performance Comparison
-![alt text](image-3.png)
+visuals/image-3.png
 
 This chart compares the performance of our binary models, highlighting
 their strengths in key metrics.
 
 ### Confusion Matrix
-![alt text](image-2.png)
-
+visuals/image-2.png
 The confusion matrix for our multi-class model shows a detailed
 breakdown of correct and incorrect predictions, providing insight into
 which classes the model is most likely to confuse.
 
 ### Top Words by Sentiment
-![alt text](image-4.png)
+image-1.png
 
 This visual will show the most influential words for each sentiment
 class, providing a human-readable explanation of our model's logic.
