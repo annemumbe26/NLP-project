@@ -1,5 +1,4 @@
-dash
-transformers
-torch
-python-dotenv
-gunicorn
+flask
+scikit-learn
+numpy
+pandas
